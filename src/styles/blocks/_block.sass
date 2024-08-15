@@ -1,0 +1,26 @@
+.block
+  display: grid
+  gap: 1rem
+  &-wrap
+    display: grid
+    gap: 2rem
+  &__title
+    font-weight: 700
+  &__link
+    &:not(.block__link--disabled):hover
+      background: $black
+      color: $white
+    &--disabled
+      color: #dbdbdb
+      text-decoration: line-through
+
+.unordered-list
+  list-style-type: disc
+  li
+    margin-left: 1.6rem
+
+.symbol
+  display: inline-block
+  font-size: 1.4rem
+  transform: translateY(0.2rem)
+  color: #dbdbdb
